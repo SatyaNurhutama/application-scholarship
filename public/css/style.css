@@ -1,0 +1,46 @@
+section {
+    padding: 4rem 0;
+  }
+  
+  
+  header.masthead {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 17rem;
+      padding-bottom: 12.5rem;
+    }
+  
+    header.masthead .masthead-subheading {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+      margin-bottom: 2rem;
+    }
+  
+    header.masthead .masthead-heading {
+      font-size: 4.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .card p {
+    width: 380px;
+    white-space: nowrap; /* hindari pemisahan kata */
+    overflow: hidden; /* sembunyikan bagian teks yang keluar dari elemen */
+    text-overflow: ellipsis; /* tambahkan elipsis (titik-titik) di akhir teks yang terpotong */
+  }
+  
+  
