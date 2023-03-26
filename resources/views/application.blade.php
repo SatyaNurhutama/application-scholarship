@@ -53,7 +53,7 @@
                                         <div class="row mb-4">
                                             <div class="form-outline">
                                                 <label class="form-label" for="name">Nama</label>
-                                                <input type="text" id="name" name="name" class="form-control form-control-lg @error('name') is-invalid @enderror" value="{{ old('name') }}" />
+                                                <input type="text" id="name" name="name" required class="form-control form-control-lg @error('name') is-invalid @enderror" value="{{ old('name') }}" />
                                                 @error('name')
                                                 <div class="invalid-feedback">{{ $message }}</div>
                                                 @enderror
@@ -63,7 +63,7 @@
                                         <div class="row mb-4">
                                             <div class="form-outline">
                                                 <label class="form-label" for="email">Email</label>
-                                                <input type="email" id="email" name="email" class="form-control form-control-lg @error('email') is-invalid @enderror" value="{{ old('email') }}" />
+                                                <input type="email" id="email" name="email" required class="form-control form-control-lg @error('email') is-invalid @enderror" value="{{ old('email') }}" />
                                                 @error('email')
                                                 <div class="invalid-feedback">{{ $message }}</div>
                                                 @enderror
@@ -74,7 +74,7 @@
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
                                                     <label class="form-label" for="number_phone">Nomor HP</label>
-                                                    <input type="number" id="number_phone" name="number_phone" class="form-control form-control-lg @error('number_phone') is-invalid @enderror" value="{{ old('number_phone') }}" />
+                                                    <input type="number" id="number_phone" name="number_phone" required class="form-control form-control-lg @error('number_phone') is-invalid @enderror" value="{{ old('number_phone') }}" />
                                                     @error('number_phone')
                                                     <div class="invalid-feedback">{{ $message }}</div>
                                                     @enderror
